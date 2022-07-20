@@ -14,8 +14,8 @@ void print_bmp();
 int get_padding(int width);
 void setArray(double gray_scale);
 
-void main(){
-	char bmp[20];
+int main(){
+	char bmp[200];
 	cin >> bmp;
 	cout << endl;
 	ifstream fin;
@@ -50,9 +50,7 @@ void main(){
 	fin.close();
 	print_bmp();
 
-	cout << endl << "Type exit to close program" << endl;
-	char exit;
-	cin >> exit;
+	return 0;
 }
 
 
